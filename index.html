@@ -1,0 +1,1585 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>zxfuli福利社 - 官方视频门户 | 会员专享福利与生活福利内容社区</title>
+<meta name="description" content="zxfuli福利社官方网站，立足福利生活品牌的视频内容门户，聚合福利攻略、会员权益、生活技巧与创作者社区，持续输出原创高清精品内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2314b8a6'/%3E%3Cstop offset='1' stop-color='%230f766e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cpath d='M20 26h24l-4 20H24z' fill='%23ffffff' opacity='.92'/%3E%3Ccircle cx='32' cy='19' r='5' fill='%23fde68a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --zx-navy:#0d1f2d;
+    --zx-teal:#0f766e;
+    --zx-teal-soft:#14b8a6;
+    --zx-mint:#e6f7f4;
+    --zx-amber:#f59e0b;
+    --zx-amber-soft:#fde68a;
+    --zx-ink:#12252f;
+    --zx-body:#3a4d58;
+    --zx-muted:#6b7f8a;
+    --zx-line:#d7e4e2;
+    --zx-bg:#f4faf8;
+    --zx-card:#ffffff;
+    --zx-radius:16px;
+    --zx-shadow:0 10px 30px rgba(13,31,45,.08);
+    --zx-head-h:112px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    color:var(--zx-body);
+    background:var(--zx-bg);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{color:var(--zx-ink);line-height:1.35;margin:0 0 .5em;}
+  section{scroll-margin-top:calc(var(--zx-head-h) + 12px);}
+  .zx-wrap{width:min(1180px,92%);margin:0 auto;}
+  .zx-eyebrow{
+    display:inline-flex;align-items:center;gap:.45rem;
+    font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--zx-teal);font-weight:700;
+  }
+  .zx-eyebrow::before{content:"";width:22px;height:2px;background:var(--zx-teal-soft);display:inline-block;}
+  .zx-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.4rem;
+    padding:.72rem 1.4rem;border-radius:999px;border:1px solid transparent;
+    font-size:.92rem;font-weight:600;cursor:pointer;transition:.25s ease;
+    font-family:inherit;
+  }
+  .zx-btn--primary{background:var(--zx-teal);color:#fff;box-shadow:0 8px 18px rgba(15,118,110,.28);}
+  .zx-btn--primary:hover{background:#0b5f59;transform:translateY(-2px);}
+  .zx-btn--ghost{background:#fff;color:var(--zx-teal);border-color:var(--zx-line);}
+  .zx-btn--ghost:hover{border-color:var(--zx-teal-soft);background:var(--zx-mint);}
+  .zx-btn--sm{padding:.45rem .95rem;font-size:.8rem;}
+  .zx-btn--amber{background:var(--zx-amber);color:#31210a;}
+  .zx-btn--amber:hover{background:#e08c04;}
+
+  /* ============ 公告条 + 页头 ============ */
+  .zx-topbar-stack{
+    position:sticky;top:0;z-index:120;
+    box-shadow:0 6px 20px rgba(13,31,45,.07);
+  }
+  .zx-announce{
+    background:linear-gradient(90deg,#0d1f2d 0%,#134e4a 55%,#0f766e 100%);
+    color:#d9f4ef;font-size:.82rem;
+  }
+  .zx-announce .zx-wrap{display:flex;align-items:center;gap:.75rem;min-height:38px;padding:.25rem 0;}
+  .zx-announce__tag{
+    flex:0 0 auto;background:var(--zx-amber-soft);color:#5a3a02;font-weight:700;
+    padding:.1rem .55rem;border-radius:999px;font-size:.72rem;letter-spacing:.04em;
+  }
+  .zx-announce__track{overflow:hidden;flex:1;min-width:0;}
+  .zx-announce__list{display:flex;gap:2.4rem;white-space:nowrap;animation:zxTicker 34s linear infinite;}
+  .zx-announce__list span{opacity:.92;}
+  .zx-announce__list span::before{content:"◆";font-size:.6rem;color:var(--zx-amber-soft);margin-right:.5rem;vertical-align:2px;}
+  @keyframes zxTicker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  .zx-announce__more{flex:0 0 auto;color:var(--zx-amber-soft);font-weight:600;font-size:.78rem;}
+
+  .zx-header{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--zx-line);}
+  .zx-header .zx-wrap{display:flex;align-items:center;gap:1.2rem;min-height:74px;}
+  .zx-brand{display:flex;align-items:center;gap:.6rem;flex:0 0 auto;}
+  .zx-brand__mark{
+    width:40px;height:40px;border-radius:12px;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--zx-teal-soft),var(--zx-teal));color:#fff;
+    font-weight:800;font-size:1.02rem;letter-spacing:-.02em;
+  }
+  .zx-brand__name{font-size:1.16rem;font-weight:800;color:var(--zx-navy);letter-spacing:.01em;}
+  .zx-brand__name small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.22em;color:var(--zx-muted);}
+  .zx-nav{display:flex;gap:.2rem;margin-left:.6rem;flex:1;}
+  .zx-nav a{
+    padding:.5rem .72rem;border-radius:10px;font-size:.9rem;font-weight:600;color:var(--zx-body);
+    transition:.2s;
+  }
+  .zx-nav a:hover{background:var(--zx-mint);color:var(--zx-teal);}
+  .zx-head-tools{display:flex;align-items:center;gap:.55rem;margin-left:auto;}
+  .zx-search{position:relative;display:flex;align-items:center;}
+  .zx-search input{
+    width:200px;padding:.52rem .9rem .52rem 2rem;border-radius:999px;border:1px solid var(--zx-line);
+    background:#f7fbfa;font-size:.85rem;font-family:inherit;color:var(--zx-ink);outline:none;transition:.25s;
+  }
+  .zx-search input:focus{width:240px;border-color:var(--zx-teal-soft);box-shadow:0 0 0 3px rgba(20,184,166,.16);background:#fff;}
+  .zx-search__icon{position:absolute;left:.7rem;font-size:.82rem;color:var(--zx-muted);pointer-events:none;}
+  .zx-search__hint{
+    position:absolute;top:calc(100% + 8px);left:0;width:260px;background:#fff;border:1px solid var(--zx-line);
+    border-radius:12px;box-shadow:var(--zx-shadow);padding:.5rem;display:none;z-index:60;
+  }
+  .zx-search__hint.is-open{display:block;}
+  .zx-search__hint p{margin:.2rem .5rem .35rem;font-size:.74rem;color:var(--zx-muted);letter-spacing:.04em;}
+  .zx-search__hint button{
+    display:block;width:100%;text-align:left;background:none;border:0;padding:.42rem .55rem;border-radius:8px;
+    font-size:.84rem;font-family:inherit;color:var(--zx-body);cursor:pointer;
+  }
+  .zx-search__hint button:hover{background:var(--zx-mint);color:var(--zx-teal);}
+  .zx-search__empty{font-size:.8rem;color:var(--zx-muted);padding:.4rem .55rem;}
+  .zx-menu-toggle{
+    display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--zx-line);background:#fff;
+    font-size:1.1rem;color:var(--zx-navy);cursor:pointer;
+  }
+  .zx-mobile-nav{display:none;background:#fff;border-bottom:1px solid var(--zx-line);}
+  .zx-mobile-nav.is-open{display:block;}
+  .zx-mobile-nav a{display:block;padding:.75rem 1.2rem;border-top:1px solid #edf5f3;font-weight:600;font-size:.9rem;}
+  .zx-mobile-nav a:hover{background:var(--zx-mint);color:var(--zx-teal);}
+
+  /* ============ 首屏 ============ */
+  .zx-hero{padding:clamp(2rem,4vw,3.6rem) 0 clamp(2rem,3vw,3rem);}
+  .zx-hero__grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(1.4rem,3vw,3rem);align-items:center;}
+  .zx-hero__badges{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1rem;}
+  .zx-hero__badge{
+    font-size:.74rem;font-weight:700;letter-spacing:.06em;padding:.24rem .7rem;border-radius:999px;
+    background:var(--zx-mint);color:var(--zx-teal);border:1px solid #cbeae4;
+  }
+  .zx-hero__badge--amber{background:#fef3d6;color:#8a5a02;border-color:#f6e0a8;}
+  .zx-hero h1{
+    font-size:clamp(2.2rem,5.4vw,3.6rem);font-weight:900;letter-spacing:-.02em;color:var(--zx-navy);
+    margin-bottom:.4rem;line-height:1.1;
+  }
+  .zx-hero h1 em{font-style:normal;color:var(--zx-teal);}
+  .zx-hero__slogan{font-size:clamp(1.02rem,2vw,1.24rem);font-weight:700;color:var(--zx-ink);margin-bottom:.9rem;}
+  .zx-hero__lead{font-size:.96rem;color:var(--zx-body);margin-bottom:1.2rem;max-width:56ch;}
+  .zx-hero__stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1.2rem 0 1.5rem;}
+  .zx-stat{
+    background:#fff;border:1px solid var(--zx-line);border-radius:14px;padding:.85rem .9rem;
+    box-shadow:0 4px 14px rgba(13,31,45,.04);
+  }
+  .zx-stat__num{font-size:1.5rem;font-weight:900;color:var(--zx-teal);letter-spacing:-.02em;}
+  .zx-stat__num small{font-size:.78rem;font-weight:700;margin-left:.15rem;color:var(--zx-teal);}
+  .zx-stat__label{font-size:.76rem;color:var(--zx-muted);font-weight:600;margin-top:.1rem;}
+  .zx-hero__actions{display:flex;flex-wrap:wrap;gap:.65rem;}
+  .zx-hero__visual{position:relative;}
+  .zx-hero__figure{border-radius:22px;overflow:hidden;box-shadow:0 22px 46px rgba(13,31,45,.16);border:1px solid #cfe7e2;}
+  .zx-hero__figure svg{width:100%;height:auto;display:block;}
+  .zx-hero__float{
+    position:absolute;left:-14px;bottom:22px;background:#fff;border-radius:14px;
+    box-shadow:0 14px 30px rgba(13,31,45,.16);padding:.7rem .95rem;display:flex;align-items:center;gap:.6rem;
+    border:1px solid var(--zx-line);
+  }
+  .zx-hero__float-dot{width:34px;height:34px;border-radius:10px;background:var(--zx-amber-soft);display:grid;place-items:center;font-size:1rem;}
+  .zx-hero__float strong{display:block;font-size:.84rem;color:var(--zx-navy);}
+  .zx-hero__float span{font-size:.74rem;color:var(--zx-muted);}
+
+  /* ============ 通用区块 ============ */
+  .zx-section{padding:clamp(2.2rem,4vw,3.4rem) 0;}
+  .zx-section--alt{background:#fff;border-top:1px solid var(--zx-line);border-bottom:1px solid var(--zx-line);}
+  .zx-section__head{max-width:760px;margin-bottom:1.8rem;}
+  .zx-section__head h2{font-size:clamp(1.5rem,3vw,2.05rem);font-weight:900;letter-spacing:-.01em;}
+  .zx-section__head p{margin:0;font-size:.94rem;color:var(--zx-muted);}
+
+  /* 焦点内容 */
+  .zx-focus{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:1.4rem;margin-bottom:1.6rem;}
+  .zx-focus__main{
+    background:#fff;border:1px solid var(--zx-line);border-radius:var(--zx-radius);overflow:hidden;
+    box-shadow:var(--zx-shadow);display:flex;flex-direction:column;
+  }
+  .zx-focus__main figure{margin:0;position:relative;aspect-ratio:16/9;overflow:hidden;background:#0d1f2d;}
+  .zx-focus__main figure svg{width:100%;height:100%;object-fit:cover;display:block;}
+  .zx-play{
+    position:absolute;inset:0;margin:auto;width:60px;height:60px;border-radius:50%;border:0;
+    background:rgba(255,255,255,.9);color:var(--zx-teal);display:grid;place-items:center;
+    font-size:1.15rem;cursor:pointer;transition:.25s;box-shadow:0 8px 22px rgba(0,0,0,.22);
+  }
+  .zx-play:hover{transform:scale(1.08);background:#fff;}
+  .zx-focus__body{padding:1.15rem 1.25rem 1.3rem;display:flex;flex-direction:column;gap:.55rem;flex:1;}
+  .zx-tag-row{display:flex;flex-wrap:wrap;gap:.4rem;}
+  .zx-tag{
+    font-size:.72rem;font-weight:700;padding:.16rem .58rem;border-radius:999px;
+    background:var(--zx-mint);color:var(--zx-teal);
+  }
+  .zx-tag--amber{background:#fef3d6;color:#8a5a02;}
+  .zx-tag--slate{background:#eef2f4;color:#4a5d68;}
+  .zx-focus__body h3{font-size:1.18rem;font-weight:800;margin:.2rem 0 0;}
+  .zx-focus__body p{margin:0;font-size:.9rem;color:var(--zx-body);}
+  .zx-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;font-size:.78rem;color:var(--zx-muted);margin-top:auto;}
+  .zx-meta b{color:var(--zx-ink);font-weight:700;}
+  .zx-focus__side{display:flex;flex-direction:column;gap:.85rem;}
+  .zx-side-item{
+    background:#fff;border:1px solid var(--zx-line);border-radius:14px;padding:.9rem 1rem;
+    display:grid;grid-template-columns:52px minmax(0,1fr);gap:.85rem;align-items:start;
+    transition:.25s;box-shadow:0 4px 14px rgba(13,31,45,.04);flex:1;
+  }
+  .zx-side-item:hover{border-color:var(--zx-teal-soft);transform:translateY(-3px);box-shadow:0 14px 28px rgba(13,31,45,.10);}
+  .zx-side-item__thumb{
+    width:52px;height:52px;border-radius:12px;overflow:hidden;background:var(--zx-mint);display:grid;place-items:center;
+  }
+  .zx-side-item__thumb svg{width:100%;height:100%;}
+  .zx-side-item h3{font-size:.94rem;font-weight:800;margin:.1rem 0 .2rem;line-height:1.45;}
+  .zx-side-item p{margin:0;font-size:.8rem;color:var(--zx-muted);line-height:1.6;}
+
+  /* 视频列表 */
+  .zx-video-list{display:flex;flex-direction:column;gap:1rem;}
+  .zx-video-item{
+    background:#fff;border:1px solid var(--zx-line);border-radius:var(--zx-radius);
+    padding:1rem 1.15rem;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:center;
+    transition:.25s;box-shadow:0 4px 14px rgba(13,31,45,.04);
+  }
+  .zx-video-item:hover{border-color:var(--zx-teal-soft);box-shadow:0 14px 30px rgba(13,31,45,.09);}
+  .zx-video-item h3{font-size:1.02rem;font-weight:800;margin:0 0 .3rem;}
+  .zx-video-item p{margin:0 0 .5rem;font-size:.86rem;color:var(--zx-body);}
+  .zx-video-item__meta{display:flex;flex-wrap:wrap;gap:.7rem;font-size:.76rem;color:var(--zx-muted);align-items:center;}
+  .zx-video-item__actions{display:flex;flex-direction:column;gap:.45rem;align-items:stretch;min-width:106px;}
+
+  /* 专题 */
+  .zx-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.1rem;}
+  .zx-topic{
+    background:#fff;border:1px solid var(--zx-line);border-radius:var(--zx-radius);padding:1.15rem 1.2rem;
+    box-shadow:0 4px 14px rgba(13,31,45,.04);display:flex;flex-direction:column;gap:.55rem;
+    transition:.25s;
+  }
+  .zx-topic:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(13,31,45,.10);border-color:var(--zx-teal-soft);}
+  .zx-topic__status{
+    display:inline-flex;align-items:center;gap:.35rem;font-size:.72rem;font-weight:700;color:#8a5a02;
+    background:#fef3d6;border-radius:999px;padding:.14rem .6rem;width:fit-content;
+  }
+  .zx-topic__status::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--zx-amber);}
+  .zx-topic h3{font-size:1.06rem;font-weight:800;margin:.1rem 0 0;}
+  .zx-topic p{margin:0;font-size:.85rem;color:var(--zx-muted);}
+  .zx-topic ul{list-style:none;padding:0;margin:.35rem 0 0;display:flex;flex-direction:column;gap:.4rem;}
+  .zx-topic li{font-size:.84rem;display:flex;gap:.5rem;color:var(--zx-body);}
+  .zx-topic li::before{content:"›";color:var(--zx-teal);font-weight:800;}
+
+  /* 解析长文 */
+  .zx-analysis{display:grid;grid-template-columns:minmax(0,1fr);gap:1.2rem;}
+  .zx-analysis__body{
+    background:#fff;border:1px solid var(--zx-line);border-radius:var(--zx-radius);padding:clamp(1.2rem,3vw,2rem);
+    box-shadow:0 4px 14px rgba(13,31,45,.04);
+  }
+  .zx-analysis h3{font-size:1.1rem;font-weight:800;margin:1.4rem 0 .5rem;display:flex;align-items:center;gap:.5rem;}
+  .zx-analysis h3:first-child{margin-top:0;}
+  .zx-analysis h3::before{content:"";width:6px;height:18px;border-radius:3px;background:linear-gradient(180deg,var(--zx-teal-soft),var(--zx-teal));}
+  .zx-analysis p{margin:0 0 .8rem;font-size:.92rem;color:var(--zx-body);}
+  .zx-analysis__quote{
+    border-left:3px solid var(--zx-teal-soft);background:var(--zx-mint);border-radius:0 12px 12px 0;
+    padding:.8rem 1rem;font-size:.88rem;color:#0b5f59;margin:1rem 0;font-weight:600;
+  }
+
+  /* 作者矩阵 */
+  .zx-author-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem;}
+  .zx-author{
+    background:#fff;border:1px solid var(--zx-line);border-radius:var(--zx-radius);padding:1.1rem 1.15rem;
+    box-shadow:0 4px 14px rgba(13,31,45,.04);display:flex;flex-direction:column;gap:.55rem;
+    transition:.25s;
+  }
+  .zx-author:hover{border-color:var(--zx-teal-soft);transform:translateY(-2px);}
+  .zx-author__top{display:flex;align-items:center;gap:.75rem;}
+  .zx-avatar{
+    width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;
+    font-size:1.05rem;flex:0 0 auto;letter-spacing:.02em;
+  }
+  .zx-author h3{font-size:1rem;font-weight:800;margin:0;}
+  .zx-author__field{font-size:.76rem;color:var(--zx-teal);font-weight:700;}
+  .zx-author p{margin:0;font-size:.84rem;color:var(--zx-body);}
+  .zx-author__stats{display:flex;gap:1rem;font-size:.76rem;color:var(--zx-muted);}
+  .zx-author__stats b{color:var(--zx-ink);}
+
+  /* 评论区 */
+  .zx-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;}
+  .zx-comment{
+    background:#fff;border:1px solid var(--zx-line);border-radius:14px;padding:1rem 1.1rem;
+    box-shadow:0 4px 14px rgba(13,31,45,.04);display:flex;flex-direction:column;gap:.45rem;
+  }
+  .zx-comment__head{display:flex;align-items:center;gap:.6rem;}
+  .zx-comment__head .zx-avatar{width:38px;height:38px;font-size:.86rem;}
+  .zx-comment__name{font-weight:800;font-size:.88rem;color:var(--zx-ink);}
+  .zx-comment__time{font-size:.72rem;color:var(--zx-muted);}
+  .zx-comment p{margin:0;font-size:.87rem;color:var(--zx-body);}
+  .zx-comment__foot{display:flex;gap:.8rem;font-size:.75rem;color:var(--zx-muted);margin-top:.2rem;}
+  .zx-comment__foot span{display:inline-flex;align-items:center;gap:.25rem;}
+
+  /* 榜单 */
+  .zx-rank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem;}
+  .zx-rank{
+    background:#fff;border:1px solid var(--zx-line);border-radius:var(--zx-radius);padding:1.1rem 1.15rem;
+    box-shadow:0 4px 14px rgba(13,31,45,.04);
+  }
+  .zx-rank h3{font-size:.98rem;font-weight:800;margin:0 0 .7rem;display:flex;align-items:center;gap:.4rem;}
+  .zx-rank h3 span{font-size:.7rem;font-weight:700;color:var(--zx-teal);background:var(--zx-mint);padding:.1rem .5rem;border-radius:999px;}
+  .zx-rank ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem;counter-reset:zxrank;}
+  .zx-rank li{
+    display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:.5rem;align-items:center;
+    font-size:.85rem;counter-increment:zxrank;
+  }
+  .zx-rank li::before{
+    content:counter(zxrank);width:22px;height:22px;border-radius:7px;background:#eef4f3;color:var(--zx-muted);
+    display:grid;place-items:center;font-size:.72rem;font-weight:800;
+  }
+  .zx-rank li:nth-child(1)::before{background:var(--zx-amber-soft);color:#8a5a02;}
+  .zx-rank li:nth-child(2)::before{background:#d9f2ee;color:var(--zx-teal);}
+  .zx-rank li:nth-child(3)::before{background:#e6eef7;color:#3f5f80;}
+  .zx-rank li b{font-weight:700;color:var(--zx-ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .zx-rank li em{font-style:normal;font-size:.74rem;color:var(--zx-muted);}
+
+  /* 企业动态 */
+  .zx-news{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;}
+  .zx-news__item{
+    background:#fff;border:1px solid var(--zx-line);border-radius:14px;padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.35rem;
+  }
+  .zx-news__item time{font-size:.74rem;color:var(--zx-teal);font-weight:700;}
+  .zx-news__item h3{font-size:.93rem;font-weight:800;margin:0;}
+  .zx-news__item p{margin:0;font-size:.83rem;color:var(--zx-muted);}
+
+  /* FAQ */
+  .zx-faq{display:flex;flex-direction:column;gap:.65rem;}
+  .zx-faq details{
+    background:#fff;border:1px solid var(--zx-line);border-radius:12px;padding:.85rem 1.1rem;
+    transition:.2s;
+  }
+  .zx-faq details[open]{border-color:var(--zx-teal-soft);box-shadow:0 8px 20px rgba(13,31,45,.07);}
+  .zx-faq summary{
+    cursor:pointer;font-weight:700;font-size:.92rem;color:var(--zx-ink);list-style:none;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .zx-faq summary::-webkit-details-marker{display:none;}
+  .zx-faq summary::after{content:"＋";color:var(--zx-teal);font-weight:800;transition:.2s;}
+  .zx-faq details[open] summary::after{content:"－";}
+  .zx-faq p{margin:.6rem 0 0;font-size:.86rem;color:var(--zx-body);}
+
+  /* 合作墙 */
+  .zx-partners{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem;}
+  .zx-partners div{
+    background:#fff;border:1px dashed var(--zx-line);border-radius:12px;padding:.9rem .8rem;text-align:center;
+    font-weight:800;font-size:.86rem;color:var(--zx-body);letter-spacing:.02em;
+  }
+
+  /* 页脚 */
+  .zx-footer{background:var(--zx-navy);color:#c3d6dd;padding:2.6rem 0 1.4rem;margin-top:1rem;}
+  .zx-footer__grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:1.6rem;}
+  .zx-footer h4{color:#fff;font-size:.92rem;margin:0 0 .6rem;letter-spacing:.04em;}
+  .zx-footer p{margin:0 0 .5rem;font-size:.83rem;line-height:1.8;color:#9fb9c2;}
+  .zx-footer a{font-size:.83rem;color:#9fb9c2;display:block;padding:.16rem 0;}
+  .zx-footer a:hover{color:var(--zx-amber-soft);}
+  .zx-footer__brand{display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem;}
+  .zx-footer__brand .zx-brand__mark{width:36px;height:36px;font-size:.92rem;}
+  .zx-footer__brand strong{color:#fff;font-size:1rem;}
+  .zx-footer__bottom{
+    border-top:1px solid rgba(255,255,255,.12);margin-top:1.8rem;padding-top:1rem;
+    display:flex;flex-wrap:wrap;gap:.8rem;justify-content:space-between;font-size:.76rem;color:#8ba7b1;
+  }
+
+  /* 回到顶部 & Toast */
+  .zx-totop{
+    position:fixed;right:20px;bottom:24px;width:46px;height:46px;border-radius:50%;border:0;
+    background:var(--zx-teal);color:#fff;font-size:1.05rem;cursor:pointer;box-shadow:0 10px 24px rgba(15,118,110,.4);
+    opacity:0;visibility:hidden;transform:translateY(10px);transition:.25s;z-index:200;
+  }
+  .zx-totop.is-show{opacity:1;visibility:visible;transform:none;}
+  .zx-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:var(--zx-navy);color:#fff;
+    padding:.66rem 1.15rem;border-radius:999px;font-size:.85rem;opacity:0;visibility:hidden;transition:.28s;
+    z-index:300;box-shadow:0 12px 28px rgba(13,31,45,.3);white-space:nowrap;
+  }
+  .zx-toast.is-show{opacity:1;visibility:visible;transform:translate(-50%,0);}
+
+  /* 响应式 */
+  @media (max-width:960px){
+    .zx-hero__grid{grid-template-columns:minmax(0,1fr);}
+    .zx-focus{grid-template-columns:minmax(0,1fr);}
+    .zx-comments{grid-template-columns:minmax(0,1fr);}
+    .zx-footer__grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  }
+  @media (max-width:820px){
+    .zx-nav{display:none;}
+    .zx-search input{width:140px;}
+    .zx-search input:focus{width:170px;}
+    .zx-menu-toggle{display:grid;place-items:center;}
+  }
+  @media (max-width:640px){
+    :root{--zx-head-h:150px;}
+    .zx-header .zx-wrap{flex-wrap:wrap;gap:.6rem;padding:.5rem 0;}
+    .zx-head-tools{width:100%;justify-content:space-between;}
+    .zx-search{flex:1;}
+    .zx-search input{width:100%;}
+    .zx-search input:focus{width:100%;}
+    .zx-search__hint{width:100%;}
+    .zx-hero__stats{grid-template-columns:minmax(0,1fr);}
+    .zx-video-item{grid-template-columns:minmax(0,1fr);}
+    .zx-video-item__actions{flex-direction:row;flex-wrap:wrap;}
+    .zx-footer__grid{grid-template-columns:minmax(0,1fr);}
+    .zx-announce__more{display:none;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .zx-announce__list{animation:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶：公告条 + 页头 ===== -->
+<div class="zx-topbar-stack">
+  <div class="zx-announce">
+    <div class="zx-wrap">
+      <span class="zx-announce__tag">官方发布</span>
+      <div class="zx-announce__track">
+        <div class="zx-announce__list">
+          <span>11月20日新增「年终福利攻略」专题，12支原创高清视频上线</span>
+          <span>会员权益中心改版：积分兑换专区新增38款生活好物</span>
+          <span>「福利社创作挑战赛」报名开放，投稿截止12月15日</span>
+          <span>官方发布：11月社区口碑榜出炉，餐饮福利类内容热度领跑</span>
+          <span>11月20日新增「年终福利攻略」专题，12支原创高清视频上线</span>
+          <span>会员权益中心改版：积分兑换专区新增38款生活好物</span>
+          <span>「福利社创作挑战赛」报名开放，投稿截止12月15日</span>
+          <span>官方发布：11月社区口碑榜出炉，餐饮福利类内容热度领跑</span>
+        </div>
+      </div>
+      <a class="zx-announce__more" href="#zx-topic">查看专题 →</a>
+    </div>
+  </div>
+  <header class="zx-header">
+    <div class="zx-wrap">
+      <a class="zx-brand" href="#zx-top" aria-label="zxfuli福利社 官方首页">
+        <span class="zx-brand__mark">zx</span>
+        <span class="zx-brand__name">zxfuli福利社<small>ZXFULI OFFICIAL</small></span>
+      </a>
+      <nav class="zx-nav" aria-label="主导航">
+        <a href="#zx-focus">焦点内容</a>
+        <a href="#zx-video">精品视频</a>
+        <a href="#zx-topic">专题企划</a>
+        <a href="#zx-authors">创作者</a>
+        <a href="#zx-rank">口碑榜</a>
+        <a href="#zx-news">企业动态</a>
+        <a href="#zx-faq">帮助中心</a>
+      </nav>
+      <div class="zx-head-tools">
+        <div class="zx-search">
+          <span class="zx-search__icon" aria-hidden="true">🔍</span>
+          <input id="zxSearchInput" type="search" placeholder="搜索福利攻略 / 创作者" aria-label="站内搜索" autocomplete="off">
+          <div class="zx-search__hint" id="zxSearchHint" role="status" aria-live="polite"></div>
+        </div>
+        <button class="zx-menu-toggle" id="zxMenuToggle" aria-expanded="false" aria-controls="zxMobileNav" aria-label="展开导航菜单">☰</button>
+      </div>
+    </div>
+    <nav class="zx-mobile-nav" id="zxMobileNav" aria-label="移动端导航">
+      <a href="#zx-focus">焦点内容</a>
+      <a href="#zx-video">精品视频</a>
+      <a href="#zx-topic">专题企划</a>
+      <a href="#zx-analysis">品牌解析</a>
+      <a href="#zx-authors">创作者矩阵</a>
+      <a href="#zx-rank">口碑与榜单</a>
+      <a href="#zx-news">企业动态</a>
+      <a href="#zx-faq">帮助中心</a>
+    </nav>
+  </header>
+</div>
+
+<main id="zx-top">
+
+  <!-- ===== S2 品牌首屏 ===== -->
+  <section class="zx-hero" id="zx-hero" aria-labelledby="zx-hero-title">
+    <div class="zx-wrap">
+      <div class="zx-hero__grid">
+        <div class="zx-hero__text">
+          <div class="zx-hero__badges">
+            <span class="zx-hero__badge">官方网站</span>
+            <span class="zx-hero__badge">企业级内容平台</span>
+            <span class="zx-hero__badge zx-hero__badge--amber">持续运营中</span>
+          </div>
+          <h1 id="zx-hero-title">zxfuli<em>福利社</em></h1>
+          <p class="zx-hero__slogan">把每一份福利，拍成看得见的生活</p>
+          <p class="zx-hero__lead">
+            zxfuli福利社官方网站是面向会员与创作者的福利生活视频门户。我们深耕福利消费垂直领域，
+            以原创高清影像记录优惠攻略、权益解读与真实体验，为企业与用户搭建值得信赖的内容生态，
+            让每一次领取福利都成为有据可循、有迹可查的品质选择。
+          </p>
+          <div class="zx-hero__stats">
+            <div class="zx-stat">
+              <div class="zx-stat__num" data-zx-count="1286">0<small>支</small></div>
+              <div class="zx-stat__label">原创高清视频累计上线</div>
+            </div>
+            <div class="zx-stat">
+              <div class="zx-stat__num" data-zx-count="42">0<small>万</small></div>
+              <div class="zx-stat__label">社区注册会员与创作者</div>
+            </div>
+            <div class="zx-stat">
+              <div class="zx-stat__num" data-zx-count="96">0<small>%</small></div>
+              <div class="zx-stat__label">内容口碑好评率（近90天）</div>
+            </div>
+          </div>
+          <div class="zx-hero__actions">
+            <a class="zx-btn zx-btn--primary" href="#zx-video">进入精品内容</a>
+            <button class="zx-btn zx-btn--ghost" type="button" data-zx-open="submit">我要投稿</button>
+            <button class="zx-btn zx-btn--amber" type="button" data-zx-share="zxfuli福利社官方网站">分享官网</button>
+          </div>
+        </div>
+        <div class="zx-hero__visual">
+          <figure class="zx-hero__figure">
+            <svg viewBox="0 0 720 520" role="img" aria-label="zxfuli福利社首屏主视觉：福利券与视频播放窗口组成的福利生活场景插画">
+              <defs>
+                <linearGradient id="zxHeroBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#0d1f2d"/>
+                  <stop offset=".55" stop-color="#134e4a"/>
+                  <stop offset="1" stop-color="#0f766e"/>
+                </linearGradient>
+                <linearGradient id="zxHeroCard" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffffff"/>
+                  <stop offset="1" stop-color="#e6f7f4"/>
+                </linearGradient>
+                <linearGradient id="zxHeroAmber" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fde68a"/>
+                  <stop offset="1" stop-color="#f59e0b"/>
+                </linearGradient>
+              </defs>
+              <rect width="720" height="520" fill="url(#zxHeroBg)"/>
+              <circle cx="600" cy="96" r="120" fill="#14b8a6" opacity=".18"/>
+              <circle cx="86" cy="452" r="150" fill="#f59e0b" opacity=".12"/>
+              <g opacity=".2" stroke="#ffffff" stroke-width="1">
+                <path d="M0 120h720M0 260h720M0 400h720"/>
+                <path d="M160 0v520M340 0v520M520 0v520"/>
+              </g>
+              <!-- 播放窗口 -->
+              <g transform="translate(96,96)">
+                <rect width="452" height="268" rx="20" fill="#0b1a24" opacity=".72"/>
+                <rect x="14" y="14" width="424" height="240" rx="14" fill="url(#zxHeroCard)"/>
+                <rect x="34" y="36" width="180" height="14" rx="7" fill="#0f766e" opacity=".8"/>
+                <rect x="34" y="62" width="120" height="10" rx="5" fill="#9fc7c2"/>
+                <rect x="34" y="86" width="384" height="104" rx="10" fill="#134e4a"/>
+                <circle cx="226" cy="138" r="30" fill="#ffffff" opacity=".92"/>
+                <path d="M218 124l22 14-22 14z" fill="#0f766e"/>
+                <rect x="34" y="204" width="92" height="34" rx="17" fill="#0f766e"/>
+                <rect x="136" y="204" width="92" height="34" rx="17" fill="#d9f2ee"/>
+                <rect x="248" y="212" width="120" height="8" rx="4" fill="#9fc7c2"/>
+                <rect x="248" y="228" width="82" height="8" rx="4" fill="#cfe7e2"/>
+              </g>
+              <!-- 福利券 -->
+              <g transform="translate(470,268) rotate(9)">
+                <rect width="188" height="112" rx="14" fill="url(#zxHeroAmber)"/>
+                <circle cx="14" cy="56" r="10" fill="#134e4a"/>
+                <circle cx="174" cy="56" r="10" fill="#134e4a"/>
+                <rect x="34" y="26" width="96" height="12" rx="6" fill="#8a5a02" opacity=".8"/>
+                <rect x="34" y="48" width="120" height="9" rx="4" fill="#8a5a02" opacity=".5"/>
+                <rect x="34" y="70" width="68" height="18" rx="9" fill="#0d1f2d"/>
+              </g>
+              <g transform="translate(48,368) rotate(-6)">
+                <rect width="150" height="88" rx="12" fill="#ffffff" opacity=".94"/>
+                <circle cx="30" cy="44" r="16" fill="#a7f3d0"/>
+                <path d="M23 44l6 6 10-12" stroke="#0f766e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="56" y="30" width="72" height="10" rx="5" fill="#0f766e" opacity=".8"/>
+                <rect x="56" y="50" width="50" height="8" rx="4" fill="#9fc7c2"/>
+              </g>
+              <g fill="#ffffff" opacity=".7">
+                <circle cx="640" cy="420" r="5"/>
+                <circle cx="606" cy="440" r="3"/>
+                <circle cx="668" cy="452" r="4"/>
+              </g>
+            </svg>
+          </figure>
+          <div class="zx-hero__float">
+            <span class="zx-hero__float-dot" aria-hidden="true">🎬</span>
+            <div>
+              <strong>今日更新 6 支</strong>
+              <span>福利攻略 · 权益解读 · 真实体验</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S3 焦点内容 ===== -->
+  <section class="zx-section zx-section--alt" id="zx-focus" aria-labelledby="zx-focus-title">
+    <div class="zx-wrap">
+      <div class="zx-section__head">
+        <span class="zx-eyebrow">Focus 焦点</span>
+        <h2 id="zx-focus-title">本周焦点：福利社重点推荐</h2>
+        <p>由编辑团队与社区口碑共同选出的重点内容，覆盖年终福利、会员权益与真实体验，代表 zxfuli福利社的精品内容标准。</p>
+      </div>
+
+      <div class="zx-focus">
+        <article class="zx-focus__main">
+          <figure>
+            <svg viewBox="0 0 800 450" role="img" aria-label="焦点视频封面：年终福利攻略盘点，桌面上的优惠券与购物清单插画">
+              <defs>
+                <linearGradient id="zxFocBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#134e4a"/>
+                  <stop offset="1" stop-color="#0d1f2d"/>
+                </linearGradient>
+              </defs>
+              <rect width="800" height="450" fill="url(#zxFocBg)"/>
+              <circle cx="700" cy="70" r="110" fill="#f59e0b" opacity=".16"/>
+              <circle cx="90" cy="400" r="120" fill="#14b8a6" opacity=".18"/>
+              <rect x="130" y="120" width="360" height="220" rx="16" fill="#ffffff" opacity=".1"/>
+              <rect x="160" y="150" width="300" height="24" rx="12" fill="#a7f3d0"/>
+              <rect x="160" y="190" width="220" height="14" rx="7" fill="#9fc7c2" opacity=".8"/>
+              <rect x="160" y="216" width="260" height="14" rx="7" fill="#9fc7c2" opacity=".6"/>
+              <rect x="160" y="256" width="120" height="36" rx="18" fill="#f59e0b"/>
+              <g transform="translate(520,150)">
+                <rect width="150" height="190" rx="14" fill="#fde68a"/>
+                <rect x="20" y="24" width="110" height="14" rx="7" fill="#8a5a02" opacity=".7"/>
+                <rect x="20" y="52" width="80" height="10" rx="5" fill="#8a5a02" opacity=".45"/>
+                <rect x="20" y="86" width="110" height="10" rx="5" fill="#8a5a02" opacity=".35"/>
+                <rect x="20" y="108" width="90" height="10" rx="5" fill="#8a5a02" opacity=".35"/>
+                <rect x="20" y="146" width="60" height="22" rx="11" fill="#0f766e"/>
+              </g>
+            </svg>
+            <button class="zx-play" type="button" data-zx-play="年终福利攻略：12类会员权益一次看懂" aria-label="播放焦点视频：年终福利攻略">▶</button>
+          </figure>
+          <div class="zx-focus__body">
+            <div class="zx-tag-row">
+              <span class="zx-tag">年终企划</span>
+              <span class="zx-tag zx-tag--amber">官方发布</span>
+              <span class="zx-tag zx-tag--slate">12分38秒</span>
+            </div>
+            <h3>年终福利攻略：12类会员权益一次看懂</h3>
+            <p>从积分兑换、联合会员到专属折扣区间，逐条拆解今年福利社权益结构的真实含金量，并给出适用于不同消费频次的领取顺序建议。</p>
+            <div class="zx-meta">
+              <span>作者 <b>福利社编辑部</b></span>
+              <span>播放 <b>8.6万</b></span>
+              <span>点赞 <b class="zx-like-count">2,418</b></span>
+              <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-like>👍 点赞</button>
+              <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-fav aria-pressed="false">🤍 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="zx-focus__side">
+          <article class="zx-side-item">
+            <div class="zx-side-item__thumb">
+              <svg viewBox="0 0 52 52" role="img" aria-label="侧栏缩略图：会员权益卡示意">
+                <rect width="52" height="52" rx="12" fill="#134e4a"/>
+                <rect x="10" y="16" width="32" height="20" rx="5" fill="#fde68a"/>
+                <rect x="14" y="21" width="16" height="4" rx="2" fill="#8a5a02"/>
+                <rect x="14" y="28" width="10" height="3" rx="1.5" fill="#8a5a02" opacity=".6"/>
+              </svg>
+            </div>
+            <div>
+              <h3>会员权益实测：这五种兑换最值</h3>
+              <p>用四周实际兑换数据，对比38款生活好物的到手成本与使用频率。</p>
+            </div>
+          </article>
+          <article class="zx-side-item">
+            <div class="zx-side-item__thumb">
+              <svg viewBox="0 0 52 52" role="img" aria-label="侧栏缩略图：城市探店路线示意">
+                <rect width="52" height="52" rx="12" fill="#e6f7f4"/>
+                <path d="M10 40l10-14 8 8 14-18" stroke="#0f766e" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <circle cx="42" cy="16" r="4" fill="#f59e0b"/>
+              </svg>
+            </div>
+            <div>
+              <h3>城市福利地图：一天走完六家门店</h3>
+              <p>把线上优惠券落到线下真实门店，路线、时段与避坑细节全部公开。</p>
+            </div>
+          </article>
+          <article class="zx-side-item">
+            <div class="zx-side-item__thumb">
+              <svg viewBox="0 0 52 52" role="img" aria-label="侧栏缩略图：创作者访谈话筒示意">
+                <rect width="52" height="52" rx="12" fill="#0d1f2d"/>
+                <rect x="21" y="10" width="10" height="20" rx="5" fill="#14b8a6"/>
+                <path d="M16 26a10 10 0 0020 0" stroke="#a7f3d0" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M26 36v6M20 42h12" stroke="#a7f3d0" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>创作者访谈：拍福利内容要先算清账</h3>
+              <p>与三位深耕福利领域的创作者聊选题、合规与数据复核方法。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S3 视频内容 ===== -->
+  <section class="zx-section" id="zx-video" aria-labelledby="zx-video-title">
+    <div class="zx-wrap">
+      <div class="zx-section__head">
+        <span class="zx-eyebrow">Videos 精品内容</span>
+        <h2 id="zx-video-title">精品视频流：福利社原创内容持续更新</h2>
+        <p>每条内容均标注数据与作者，支持点赞、收藏与复制链接分享。zxfuli福利社坚持真实体验、可复核数据与正版素材授权。</p>
+      </div>
+
+      <div class="zx-video-list">
+        <article class="zx-video-item">
+          <div>
+            <div class="zx-tag-row" style="margin-bottom:.4rem;">
+              <span class="zx-tag">实用技巧</span><span class="zx-tag zx-tag--slate">9分12秒</span>
+            </div>
+            <h3>积分兑换全流程：从浏览到收货的七个步骤</h3>
+            <p>完整演示兑换链路中的筛选、比价、库存确认与售后入口，附常见失败原因排查表，适合首次使用积分专区的新会员。</p>
+            <div class="zx-video-item__meta">
+              <span>作者 阿棠说福利</span><span>播放 5.2万</span><span>点赞 <b class="zx-like-count">1,306</b></span><span>收藏 872</span>
+            </div>
+          </div>
+          <div class="zx-video-item__actions">
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-like>👍 点赞</button>
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-fav aria-pressed="false">🤍 收藏</button>
+            <button class="zx-btn zx-btn--sm zx-btn--primary" type="button" data-zx-copy="积分兑换全流程：从浏览到收货的七个步骤">复制链接</button>
+          </div>
+        </article>
+
+        <article class="zx-video-item">
+          <div>
+            <div class="zx-tag-row" style="margin-bottom:.4rem;">
+              <span class="zx-tag">深度测评</span><span class="zx-tag zx-tag--amber">数据复核</span>
+            </div>
+            <h3>八款联合会员横评：价格、权益与续费坑位</h3>
+            <p>按权益总量、可使用频次与隐性门槛三个维度打分，逐款给出适用人群，不推荐“看起来最便宜”的选项。</p>
+            <div class="zx-video-item__meta">
+              <span>作者 算账的老周</span><span>播放 7.4万</span><span>点赞 <b class="zx-like-count">2,041</b></span><span>收藏 1,286</span>
+            </div>
+          </div>
+          <div class="zx-video-item__actions">
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-like>👍 点赞</button>
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-fav aria-pressed="false">🤍 收藏</button>
+            <button class="zx-btn zx-btn--sm zx-btn--primary" type="button" data-zx-copy="八款联合会员横评：价格、权益与续费坑位">复制链接</button>
+          </div>
+        </article>
+
+        <article class="zx-video-item">
+          <div>
+            <div class="zx-tag-row" style="margin-bottom:.4rem;">
+              <span class="zx-tag">城市探索</span><span class="zx-tag zx-tag--slate">11分05秒</span>
+            </div>
+            <h3>周末福利路线：三条街区的门店暗号与限时券</h3>
+            <p>用一张交通图串起老城三家合作门店，记录限时券的领取时段与实际核销体验，附步行路线与排队高峰提示。</p>
+            <div class="zx-video-item__meta">
+              <span>作者 城西漫游指南</span><span>播放 3.8万</span><span>点赞 <b class="zx-like-count">918</b></span><span>收藏 640</span>
+            </div>
+          </div>
+          <div class="zx-video-item__actions">
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-like>👍 点赞</button>
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-fav aria-pressed="false">🤍 收藏</button>
+            <button class="zx-btn zx-btn--sm zx-btn--primary" type="button" data-zx-copy="周末福利路线：三条街区的门店暗号与限时券">复制链接</button>
+          </div>
+        </article>
+
+        <article class="zx-video-item">
+          <div>
+            <div class="zx-tag-row" style="margin-bottom:.4rem;">
+              <span class="zx-tag">人物访谈</span><span class="zx-tag zx-tag--amber">创作者故事</span>
+            </div>
+            <h3>从记账笔记到十万播放：一位福利博主的三年</h3>
+            <p>访谈围绕选题来源、数据核对与合规边界展开，展示一位普通用户如何在社区中成长，并形成稳定的内容节奏。</p>
+            <div class="zx-video-item__meta">
+              <span>作者 福利社编辑部</span><span>播放 4.6万</span><span>点赞 <b class="zx-like-count">1,472</b></span><span>收藏 980</span>
+            </div>
+          </div>
+          <div class="zx-video-item__actions">
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-like>👍 点赞</button>
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-fav aria-pressed="false">🤍 收藏</button>
+            <button class="zx-btn zx-btn--sm zx-btn--primary" type="button" data-zx-copy="从记账笔记到十万播放：一位福利博主的三年">复制链接</button>
+          </div>
+        </article>
+
+        <article class="zx-video-item">
+          <div>
+            <div class="zx-tag-row" style="margin-bottom:.4rem;">
+              <span class="zx-tag">知识科普</span><span class="zx-tag zx-tag--slate">7分44秒</span>
+            </div>
+            <h3>看懂优惠券规则：七种常见限制条件拆解</h3>
+            <p>把“满减、跨店、限品类、限时段”等规则用图示讲清楚，帮助用户在领取前快速判断真实可用性，减少无效操作。</p>
+            <div class="zx-video-item__meta">
+              <span>作者 规则研究所</span><span>播放 6.1万</span><span>点赞 <b class="zx-like-count">1,862</b></span><span>收藏 1,344</span>
+            </div>
+          </div>
+          <div class="zx-video-item__actions">
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-like>👍 点赞</button>
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-fav aria-pressed="false">🤍 收藏</button>
+            <button class="zx-btn zx-btn--sm zx-btn--primary" type="button" data-zx-copy="看懂优惠券规则：七种常见限制条件拆解">复制链接</button>
+          </div>
+        </article>
+
+        <article class="zx-video-item">
+          <div>
+            <div class="zx-tag-row" style="margin-bottom:.4rem;">
+              <span class="zx-tag">生活方式</span><span class="zx-tag zx-tag--slate">8分20秒</span>
+            </div>
+            <h3>300元过一周：普通人的福利生活实验</h3>
+            <p>记录一周内的真实消费与兑换记录，包括妥协与失误，用日常影像呈现理性消费的可行边界。</p>
+            <div class="zx-video-item__meta">
+              <span>作者 小林的日子</span><span>播放 9.3万</span><span>点赞 <b class="zx-like-count">3,105</b></span><span>收藏 2,018</span>
+            </div>
+          </div>
+          <div class="zx-video-item__actions">
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-like>👍 点赞</button>
+            <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-fav aria-pressed="false">🤍 收藏</button>
+            <button class="zx-btn zx-btn--sm zx-btn--primary" type="button" data-zx-copy="300元过一周：普通人的福利生活实验">复制链接</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M4 专题企划 ===== -->
+  <section class="zx-section zx-section--alt" id="zx-topic" aria-labelledby="zx-topic-title">
+    <div class="zx-wrap">
+      <div class="zx-section__head">
+        <span class="zx-eyebrow">Specials 专题企划</span>
+        <h2 id="zx-topic-title">专题企划：福利社的长期内容工程</h2>
+        <p>每个专题由编辑牵头、创作者共建，持续更新并保留完整版本记录。zxfuli福利社希望用专题沉淀可复查的内容资产。</p>
+      </div>
+
+      <div class="zx-topic-grid">
+        <article class="zx-topic">
+          <span class="zx-topic__status">连载中 · 已更新 9 期</span>
+          <h3>年终福利攻略专区</h3>
+          <p>围绕年末消费节奏，拆解会员权益、联合会员与积分兑换的完整使用顺序。</p>
+          <ul>
+            <li>12类会员权益一次看懂</li>
+            <li>积分兑换全流程实操</li>
+            <li>年末续费避坑清单</li>
+          </ul>
+        </article>
+        <article class="zx-topic">
+          <span class="zx-topic__status">连载中 · 已更新 6 期</span>
+          <h3>门店暗号与线下核销</h3>
+          <p>把线上券带到线下门店，记录真实核销过程、排队时段与店员沟通细节。</p>
+          <ul>
+            <li>城市福利地图第一期</li>
+            <li>限时券核销避坑记</li>
+            <li>三家合作门店实地走访</li>
+          </ul>
+        </article>
+        <article class="zx-topic">
+          <span class="zx-topic__status">已完结 · 共 12 期</span>
+          <h3>普通人的福利生活</h3>
+          <p>不追求极端省钱，只记录普通家庭在一个月内的真实兑换与消费选择。</p>
+          <ul>
+            <li>300元过一周实验</li>
+            <li>四口之家的月度账本</li>
+            <li>一次失误兑换的复盘</li>
+          </ul>
+        </article>
+        <article class="zx-topic">
+          <span class="zx-topic__status">即将上线 · 预约中</span>
+          <h3>创作者福利挑战赛</h3>
+          <p>面向社区创作者的主题创作企划，鼓励用影像讲清楚一份福利的来源与价值。</p>
+          <ul>
+            <li>比赛规则与投稿入口</li>
+            <li>评审标准与数据说明</li>
+            <li>往届优秀作品回顾</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M15 关键词解析长文 ===== -->
+  <section class="zx-section" id="zx-analysis" aria-labelledby="zx-analysis-title">
+    <div class="zx-wrap">
+      <div class="zx-section__head">
+        <span class="zx-eyebrow">Insight 深度解析</span>
+        <h2 id="zx-analysis-title">深度解析：zxfuli福利社为什么值得持续关注</h2>
+        <p>从品牌定位、内容方法到社区治理，完整说明这家福利社视频门户的运营逻辑。</p>
+      </div>
+
+      <div class="zx-analysis">
+        <div class="zx-analysis__body">
+          <h3>一、品牌定位：从福利信息到可验证的内容品牌</h3>
+          <p>
+            zxfuli福利社并不是一个简单的优惠信息聚合页，而是一个以视频为主要表达方式的福利生活内容品牌。
+            在信息过剩的环境里，用户真正缺的并不是“更多券”，而是“这张券到底值不值得用、怎么用、什么时候用”的判断依据。
+            zxfuli福利社官方网站把这个问题拆成可拍摄、可复核、可讨论的内容单元：一支视频只回答一个具体问题，
+            例如某类积分兑换的实际到手成本、某家门店限时券的核销流程、某个联合会员在低频使用场景下的真实价值。
+            这种克制的内容结构，让福利社在垂直领域逐步积累起值得信赖的口碑。
+          </p>
+          <p>
+            作为企业级内容平台，我们同时服务两类人群：一类是希望高效使用会员权益的普通用户，另一类是希望把生活经验转化为作品的创作者。
+            前者需要清晰的攻略与真实体验，后者需要稳定的选题机制、明确的合规边界与可预期的曝光机会。
+            zxfuli福利社用同一套内容标准连接两端——所有结论必须能追溯到具体操作，所有推荐必须标注适用条件，
+            所有合作内容必须明示来源。正是这套标准，让平台的内容生态保持长期健康。
+          </p>
+          <div class="zx-analysis__quote">
+            我们相信，福利内容的价值不在于“便宜”，而在于“清楚”。清楚规则、清楚成本、清楚风险，才是真正的用户至上。
+          </div>
+
+          <h3>二、内容方法：一支福利视频如何被生产出来</h3>
+          <p>
+            在zxfuli福利社，一支正式的福利视频通常要经过五个环节。第一步是选题池筛选：编辑团队每周从社区提问、搜索热词与
+            企业动态中整理候选题目，优先选择“有明确结论、可被验证、对多数人有参考价值”的方向。第二步是资料核对：
+            对照官方规则页面、权益说明与历史版本，确认限制条件是否发生变化，避免使用过期截图。
+            第三步是实拍与记录：创作者按照统一模板记录时间、地点、操作步骤与实际结果，保留原始凭证以便复核。
+            第四步是后期与文案：用图示讲清规则，用字幕标注关键数字，避免夸大表述。第五步是发布后的回访：
+            当规则调整时，编辑会在原内容上补充更新说明，而不是悄悄删除。
+          </p>
+          <p>
+            这套流程看起来比“随手拍一条”慢，但它带来两个直接好处。其一，内容的半衰期更长：用户半年后回看，依然能判断结论是否适用。
+            其二，社区讨论更有质量：评论区里出现分歧时，双方可以回到同一套事实基础上交流，而不是互相指责“你被坑了”。
+            zxfuli福利社的视频区因此形成了相对理性的讨论氛围，这也是许多用户愿意长期停留的原因。
+          </p>
+
+          <h3>三、内容生态：创作者、企业与用户的三方协作</h3>
+          <p>
+            福利内容天然涉及商业信息，因此透明比热情更重要。zxfuli福利社在机制上做了三层设计。
+            第一层是身份透明：创作者主页明确标注擅长领域、作品数量与是否参与官方企划，用户可以在点开视频前就知道对方是谁。
+            第二层是数据透明：视频条目统一展示播放、点赞与收藏数据，榜单按固定周期更新，规则写在帮助中心，接受公开查阅。
+            第三层是纠错透明：用户可以通过举报与反馈入口提交问题，编辑在核实后会在内容页补充说明，并把典型问题整理进FAQ。
+          </p>
+          <p>
+            对企业合作方而言，zxfuli福利社提供的不只是曝光位，而是一套可被检验的内容方案：权益是否讲清楚、门槛是否说明白、
+            售后路径是否完整。我们会建议合作方把复杂规则拆成短内容，也接受在视频中呈现“这款权益不适合所有人”的结论。
+            长期看，这种坦诚反而提升了品牌影响力，因为用户会记住那个“愿意说清楚缺点”的平台。
+          </p>
+
+          <h3>四、社区治理与长期主义：让福利内容走得更远</h3>
+          <p>
+            社区活力不是靠数量堆出来的，而是靠稳定的规则与持续的陪伴。zxfuli福利社对搬运、夸大与虚假截图保持零容忍，
+            对原创作者提供素材授权指引与剪辑支持，对新加入的创作者提供选题模板与数据自查清单。
+            我们每年举办公开的创作挑战赛，把优秀作品放进专题首页，也会在年终整理一份完整的内容年鉴，
+            记录这一年里社区共同验证过的结论与仍然存在争议的问题。
+          </p>
+          <p>
+            我们清楚，福利领域变化很快：规则会调整，权益会下架，合作会终止。因此平台把“持续运营”写进自己的原则里——
+            不追求一次性的爆款，而是追求可被反复查询的稳定内容库。当用户在未来某个时刻再次打开zxfuli福利社官方网站，
+            我们希望他看到的不只是新视频，还有一个可以被信任、被追溯、被讨论的内容生态。这既是企业的社会责任，
+            也是这个品牌愿意长期投入的方向。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S5 创作者矩阵 ===== -->
+  <section class="zx-section zx-section--alt" id="zx-authors" aria-labelledby="zx-authors-title">
+    <div class="zx-wrap">
+      <div class="zx-section__head">
+        <span class="zx-eyebrow">Creators 创作者</span>
+        <h2 id="zx-authors-title">创作者矩阵：福利社的稳定内容供给</h2>
+        <p>以下创作者长期在zxfuli福利社发布原创内容，覆盖攻略、测评、城市探索与生活记录等方向。</p>
+      </div>
+
+      <div class="zx-author-grid">
+        <article class="zx-author">
+          <div class="zx-author__top">
+            <div class="zx-avatar" style="background:linear-gradient(135deg,#14b8a6,#0f766e);">棠</div>
+            <div>
+              <h3>阿棠说福利</h3>
+              <div class="zx-author__field">积分兑换 · 流程攻略</div>
+            </div>
+          </div>
+          <p>擅长把复杂的兑换链路拆成可跟随的步骤，镜头干净、字幕克制。三年间累计发布百余条实操视频，最看重“照着做就能成功”这件事，常年在评论区答疑。</p>
+          <div class="zx-author__stats"><span>作品 <b>128</b></span><span>粉丝 <b>9.6万</b></span></div>
+          <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-author="阿棠说福利|专攻积分兑换与流程拆解，视频以步骤清晰、字幕克制著称，长期维护一份公开的兑换失败原因清单。">查看作者</button>
+        </article>
+
+        <article class="zx-author">
+          <div class="zx-author__top">
+            <div class="zx-avatar" style="background:linear-gradient(135deg,#f59e0b,#b45309);">周</div>
+            <div>
+              <h3>算账的老周</h3>
+              <div class="zx-author__field">会员横评 · 数据测算</div>
+            </div>
+          </div>
+          <p>财务背景出身，习惯用表格说话。每期横评都公开测算口径与假设条件，坚持把“不推荐”的结论也讲清楚，被社区称为最不怕得罪人的测评者。</p>
+          <div class="zx-author__stats"><span>作品 <b>76</b></span><span>粉丝 <b>12.4万</b></span></div>
+          <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-author="算账的老周|财务背景，专注会员权益横评与成本测算，所有结论附测算口径，接受社区公开质询。">查看作者</button>
+        </article>
+
+        <article class="zx-author">
+          <div class="zx-author__top">
+            <div class="zx-avatar" style="background:linear-gradient(135deg,#3f5f80,#0d1f2d);">城</div>
+            <div>
+              <h3>城西漫游指南</h3>
+              <div class="zx-author__field">城市探索 · 线下核销</div>
+            </div>
+          </div>
+          <p>用步行路线串起合作门店，擅长记录排队时段、店员沟通与真实核销体验。画面偏纪实，偶尔保留失败片段，认为“不顺利的过程也值得被看见”。</p>
+          <div class="zx-author__stats"><span>作品 <b>54</b></span><span>粉丝 <b>6.1万</b></span></div>
+          <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-author="城西漫游指南|城市探索类创作者，专注线下门店福利核销记录，作品保留真实失败片段，强调过程可复现。">查看作者</button>
+        </article>
+
+        <article class="zx-author">
+          <div class="zx-author__top">
+            <div class="zx-avatar" style="background:linear-gradient(135deg,#0f766e,#134e4a);">林</div>
+            <div>
+              <h3>小林的日子</h3>
+              <div class="zx-author__field">生活方式 · 月度账本</div>
+            </div>
+          </div>
+          <p>以普通家庭的月度账本为主线，记录兑换、消费与妥协。内容节奏舒缓，很少使用夸张标题，却常常在评论区引发关于理性消费的长讨论。</p>
+          <div class="zx-author__stats"><span>作品 <b>93</b></span><span>粉丝 <b>8.8万</b></span></div>
+          <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-author="小林的日子|生活方式创作者，用月度账本记录真实消费与福利兑换，倡导理性、可持续的日常选择。">查看作者</button>
+        </article>
+
+        <article class="zx-author">
+          <div class="zx-author__top">
+            <div class="zx-avatar" style="background:linear-gradient(135deg,#0ea5a4,#0d1f2d);">规</div>
+            <div>
+              <h3>规则研究所</h3>
+              <div class="zx-author__field">知识科普 · 规则解读</div>
+            </div>
+          </div>
+          <p>专门研究优惠规则的表达方式，把“限品类、限时段、跨店”等术语画成流程图。擅长用最短时长讲清最容易误解的部分，是新人入门常看的第一站。</p>
+          <div class="zx-author__stats"><span>作品 <b>61</b></span><span>粉丝 <b>7.3万</b></span></div>
+          <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-author="规则研究所|专注优惠券规则科普，用图示与流程图降低理解门槛，内容被社区广泛作为入门资料引用。">查看作者</button>
+        </article>
+
+        <article class="zx-author">
+          <div class="zx-author__top">
+            <div class="zx-avatar" style="background:linear-gradient(135deg,#f59e0b,#0f766e);">编</div>
+            <div>
+              <h3>福利社编辑部</h3>
+              <div class="zx-author__field">官方发布 · 专题企划</div>
+            </div>
+          </div>
+          <p>平台官方内容团队，负责重大企划、品牌故事与访谈栏目。所有官方发布内容均经过双人核对，并在页面保留版本更新时间，接受用户监督。</p>
+          <div class="zx-author__stats"><span>作品 <b>214</b></span><span>粉丝 <b>21.5万</b></span></div>
+          <button class="zx-btn zx-btn--sm zx-btn--ghost" type="button" data-zx-author="福利社编辑部|zxfuli福利社官方内容团队，负责专题企划、品牌故事与创作者访谈，内容保留版本更新记录。">查看作者</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S6 榜单 + 评论 ===== -->
+  <section class="zx-section" id="zx-rank" aria-labelledby="zx-rank-title">
+    <div class="zx-wrap">
+      <div class="zx-section__head">
+        <span class="zx-eyebrow">Rank &amp; Voice 口碑</span>
+        <h2 id="zx-rank-title">口碑榜与社区评价</h2>
+        <p>榜单按固定周期更新，评价来自真实社区用户。zxfuli福利社把公开数据作为内容口碑的一部分，欢迎对照查看。</p>
+      </div>
+
+      <div class="zx-rank-grid" style="margin-bottom:1.6rem;">
+        <div class="zx-rank">
+          <h3>热度榜 <span>本周</span></h3>
+          <ol>
+            <li><b>300元过一周：普通人的福利生活实验</b><em>9.3万</em></li>
+            <li><b>年终福利攻略：12类会员权益一次看懂</b><em>8.6万</em></li>
+            <li><b>八款联合会员横评</b><em>7.4万</em></li>
+            <li><b>看懂优惠券规则</b><em>6.1万</em></li>
+            <li><b>积分兑换全流程</b><em>5.2万</em></li>
+            <li><b>从记账笔记到十万播放</b><em>4.6万</em></li>
+          </ol>
+        </div>
+        <div class="zx-rank">
+          <h3>新人榜 <span>近30天</span></h3>
+          <ol>
+            <li><b>小满的兑换日记</b><em>新晋创作者</em></li>
+            <li><b>北门面包福利观察</b><em>新晋创作者</em></li>
+            <li><b>一枚券的旅行</b><em>新晋创作者</em></li>
+            <li><b>阿禾的省钱笔记本</b><em>新晋创作者</em></li>
+            <li><b>夜班后的福利清单</b><em>新晋创作者</em></li>
+            <li><b>纸上福利社</b><em>新晋创作者</em></li>
+          </ol>
+        </div>
+        <div class="zx-rank">
+          <h3>口碑榜 <span>近90天</span></h3>
+          <ol>
+            <li><b>规则研究所</b><em>好评 98%</em></li>
+            <li><b>算账的老周</b><em>好评 97%</em></li>
+            <li><b>阿棠说福利</b><em>好评 96%</em></li>
+            <li><b>小林的日子</b><em>好评 95%</em></li>
+            <li><b>城西漫游指南</b><em>好评 94%</em></li>
+            <li><b>福利社编辑部</b><em>好评 93%</em></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="zx-comments">
+        <article class="zx-comment">
+          <div class="zx-comment__head">
+            <div class="zx-avatar" style="background:#14b8a6;">周</div>
+            <div>
+              <div class="zx-comment__name">周末不加班</div>
+              <div class="zx-comment__time">11月21日</div>
+            </div>
+          </div>
+          <p>按照积分兑换那条视频的步骤做了一遍，第一次就成功了。最有用的是失败原因排查表，以前总以为是自己手慢，其实是品类限制。</p>
+          <div class="zx-comment__foot"><span>👍 126</span><span>💬 回复 8</span></div>
+        </article>
+        <article class="zx-comment">
+          <div class="zx-comment__head">
+            <div class="zx-avatar" style="background:#f59e0b;">梧</div>
+            <div>
+              <div class="zx-comment__name">梧桐巷口</div>
+              <div class="zx-comment__time">11月20日</div>
+            </div>
+          </div>
+          <p>很少见到测评会主动说“这款不适合你”，老周的横评让我少续了一个根本用不上的会员，这种内容才叫值得信赖。</p>
+          <div class="zx-comment__foot"><span>👍 208</span><span>💬 回复 14</span></div>
+        </article>
+        <article class="zx-comment">
+          <div class="zx-comment__head">
+            <div class="zx-avatar" style="background:#3f5f80;">北</div>
+            <div>
+              <div class="zx-comment__name">北门面包</div>
+              <div class="zx-comment__time">11月19日</div>
+            </div>
+          </div>
+          <p>城市福利地图那期我照着走了一遍，第三家门店的限时券确实要早点去，下午两点后就没了。这种细节比任何广告都有用。</p>
+          <div class="zx-comment__foot"><span>👍 87</span><span>💬 回复 5</span></div>
+        </article>
+        <article class="zx-comment">
+          <div class="zx-comment__head">
+            <div class="zx-avatar" style="background:#0f766e;">禾</div>
+            <div>
+              <div class="zx-comment__name">阿禾的笔记本</div>
+              <div class="zx-comment__time">11月18日</div>
+            </div>
+          </div>
+          <p>作为一个刚开始投稿的创作者，选题模板帮了大忙。以前拍了没人看，现在至少知道该怎么把一件事讲完整，希望平台多做这种公开指引。</p>
+          <div class="zx-comment__foot"><span>👍 64</span><span>💬 回复 11</span></div>
+        </article>
+        <article class="zx-comment">
+          <div class="zx-comment__head">
+            <div class="zx-avatar" style="background:#b45309;">夜</div>
+            <div>
+              <div class="zx-comment__name">夜班后的清单</div>
+              <div class="zx-comment__time">11月17日</div>
+            </div>
+          </div>
+          <p>视频长度控制得很好，基本十分钟内能讲完一件事。上夜班之后没什么时间看长视频，这点体验很贴心，希望继续保持。</p>
+          <div class="zx-comment__foot"><span>👍 42</span><span>💬 回复 3</span></div>
+        </article>
+        <article class="zx-comment">
+          <div class="zx-comment__head">
+            <div class="zx-avatar" style="background:#134e4a;">纸</div>
+            <div>
+              <div class="zx-comment__name">纸上福利社</div>
+              <div class="zx-comment__time">11月16日</div>
+            </div>
+          </div>
+          <p>提个小建议：希望部分老视频能补充“规则已调整”的提示。有些内容去年看是对的，今年情况变了，补充说明会更严谨。</p>
+          <div class="zx-comment__foot"><span>👍 153</span><span>💬 回复 22</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S7 企业动态 + 合作 + FAQ ===== -->
+  <section class="zx-section zx-section--alt" id="zx-news" aria-labelledby="zx-news-title">
+    <div class="zx-wrap">
+      <div class="zx-section__head">
+        <span class="zx-eyebrow">Updates 企业动态</span>
+        <h2 id="zx-news-title">企业动态与官方发布</h2>
+        <p>品牌资讯、内容更新与规则说明，均由zxfuli福利社官方发布并保留版本记录。</p>
+      </div>
+
+      <div class="zx-news">
+        <article class="zx-news__item">
+          <time datetime="2026-11-20">2026年11月20日</time>
+          <h3>年终福利攻略专题上线</h3>
+          <p>首批12支原创高清视频发布，覆盖会员权益、积分兑换与续费决策三个方向。</p>
+        </article>
+        <article class="zx-news__item">
+          <time datetime="2026-11-15">2026年11月15日</time>
+          <h3>会员权益中心完成改版</h3>
+          <p>积分兑换专区新增38款生活好物，分类筛选与库存提示同步优化。</p>
+        </article>
+        <article class="zx-news__item">
+          <time datetime="2026-11-08">2026年11月8日</time>
+          <h3>创作挑战赛报名开放</h3>
+          <p>面向社区创作者的主题创作企划启动，投稿截止12月15日，评审标准已公开。</p>
+        </article>
+        <article class="zx-news__item">
+          <time datetime="2026-10-30">2026年10月30日</time>
+          <h3>内容自查清单发布</h3>
+          <p>官方整理数据核对与合规发布清单，免费提供给所有投稿创作者使用。</p>
+        </article>
+      </div>
+
+      <div style="margin-top:1.8rem;">
+        <h3 style="font-size:1.05rem;margin-bottom:.8rem;">合作品牌与伙伴</h3>
+        <div class="zx-partners">
+          <div>城市生活周刊</div>
+          <div>北门烘焙工坊</div>
+          <div>周末影院联盟</div>
+          <div>知行图书计划</div>
+          <div>清晨咖啡研究所</div>
+          <div>邻里便利店联盟</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="zx-section" id="zx-faq" aria-labelledby="zx-faq-title">
+    <div class="zx-wrap">
+      <div class="zx-section__head">
+        <span class="zx-eyebrow">Help 帮助中心</span>
+        <h2 id="zx-faq-title">常见问题与投稿说明</h2>
+        <p>关于内容规则、创作者投稿与数据口径的常见疑问，均可在此查阅。</p>
+      </div>
+
+      <div class="zx-faq">
+        <details>
+          <summary>zxfuli福利社的内容如何保证真实？</summary>
+          <p>所有实操类内容需提交原始操作记录，编辑会抽样复核关键步骤；涉及权益规则的视频需对照官方说明，并在页面标注核对时间。发现错误可通过举报入口反馈。</p>
+        </details>
+        <details>
+          <summary>普通用户可以投稿吗？需要什么条件？</summary>
+          <p>可以。完成社区注册并通过实名验证即可投稿，首批作品建议从“一次真实兑换经历”开始。编辑部提供选题模板与数据自查清单，帮助新人把内容讲完整。</p>
+        </details>
+        <details>
+          <summary>视频中的播放、点赞与收藏数据如何统计？</summary>
+          <p>数据按自然周统计并去重，点赞与收藏可在页面直接操作。榜单按固定周期更新，统计口径在帮助中心公开，欢迎对照核对。</p>
+        </details>
+        <details>
+          <summary>合作内容会标注吗？</summary>
+          <p>会。所有商业合作内容在标题区或正文首段明确标注合作来源，并保留合作方信息。若合作方要求删除不利结论，平台有权拒绝合作。</p>
+        </details>
+        <details>
+          <summary>旧视频的规则变化会更新吗？</summary>
+          <p>会。规则调整后，编辑会在原内容页补充更新说明，并在专题页维护版本记录。若结论已完全不适用，会标注“已失效”并推荐最新内容。</p>
+        </details>
+        <details>
+          <summary>如何参与创作挑战赛或专题共建？</summary>
+          <p>通过投稿入口提交作品并选择对应专题，编辑部会在五个工作日内回复。入选作品将进入专题页展示，并获得官方推荐位与素材支持。</p>
+        </details>
+        <details>
+          <summary>遇到无法核销的券怎么办？</summary>
+          <p>先确认券的有效期与使用限制，再联系门店或对应服务方。若问题普遍存在，欢迎在社区反馈，编辑会核实后整理成避坑内容，必要时协调合作方处理。</p>
+        </details>
+      </div>
+
+      <div style="margin-top:1.6rem;display:flex;flex-wrap:wrap;gap:.7rem;">
+        <button class="zx-btn zx-btn--primary" type="button" data-zx-open="submit">投稿入口</button>
+        <button class="zx-btn zx-btn--ghost" type="button" data-zx-open="report">举报与反馈</button>
+        <button class="zx-btn zx-btn--amber" type="button" data-zx-share="zxfuli福利社官方网站">分享给朋友</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="zx-footer">
+  <div class="zx-wrap">
+    <div class="zx-footer__grid">
+      <div>
+        <div class="zx-footer__brand">
+          <span class="zx-brand__mark">zx</span>
+          <strong>zxfuli福利社</strong>
+        </div>
+        <p>zxfuli福利社官方网站，专注福利生活领域的原创视频内容平台。以真实体验、可复核数据与正版素材为基础，持续为会员、创作者与合作品牌搭建值得信赖的内容生态。</p>
+        <p>持续运营中 · 用户至上 · 匠心内容</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <a href="#zx-focus">焦点内容</a>
+        <a href="#zx-video">精品视频</a>
+        <a href="#zx-topic">专题企划</a>
+        <a href="#zx-analysis">深度解析</a>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <a href="#zx-authors">创作者矩阵</a>
+        <a href="#zx-rank">口碑与榜单</a>
+        <a href="#zx-news">企业动态</a>
+        <a href="#zx-faq">帮助中心</a>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <a href="#zx-faq">投稿说明</a>
+        <a href="#zx-faq">创作挑战赛</a>
+        <a href="#zx-faq">举报与反馈</a>
+        <a href="#zx-top">回到顶部</a>
+      </div>
+    </div>
+    <div class="zx-footer__bottom">
+      <span>© 2026 zxfuli福利社 版权所有 · 官方网站 · 持续运营中</span>
+      <span>备案号：浙ICP备2026000000号-1 · 内容合规审查编号 ZX-2026-1122</span>
+    </div>
+  </div>
+</footer>
+
+<button class="zx-totop" id="zxToTop" type="button" aria-label="回到顶部">↑</button>
+<div class="zx-toast" id="zxToast" role="status" aria-live="polite"></div>
+
+<style>
+  .zx-modal-mask{
+    position:fixed;inset:0;background:rgba(13,31,45,.55);display:none;align-items:center;justify-content:center;
+    z-index:400;padding:1.2rem;
+  }
+  .zx-modal-mask.is-open{display:flex;}
+  .zx-modal{
+    background:#fff;border-radius:18px;max-width:520px;width:100%;padding:1.5rem 1.6rem;
+    box-shadow:0 30px 60px rgba(13,31,45,.3);max-height:82vh;overflow:auto;
+  }
+  .zx-modal h3{margin:0 0 .6rem;font-size:1.15rem;}
+  .zx-modal p{font-size:.9rem;color:var(--zx-body);margin:0 0 .8rem;}
+  .zx-modal label{display:block;font-size:.82rem;font-weight:700;color:var(--zx-ink);margin:.7rem 0 .3rem;}
+  .zx-modal input,.zx-modal textarea,.zx-modal select{
+    width:100%;padding:.6rem .8rem;border:1px solid var(--zx-line);border-radius:10px;
+    font-family:inherit;font-size:.88rem;color:var(--zx-ink);background:#f8fbfa;outline:none;
+  }
+  .zx-modal input:focus,.zx-modal textarea:focus,.zx-modal select:focus{border-color:var(--zx-teal-soft);background:#fff;}
+  .zx-modal__actions{display:flex;gap:.6rem;justify-content:flex-end;margin-top:1.1rem;}
+  .zx-modal__close{
+    float:right;border:0;background:#eef4f3;width:32px;height:32px;border-radius:50%;cursor:pointer;
+    font-size:1rem;color:var(--zx-muted);
+  }
+</style>
+
+<div class="zx-modal-mask" id="zxModalMask">
+  <div class="zx-modal" role="dialog" aria-modal="true" aria-labelledby="zxModalTitle">
+    <button class="zx-modal__close" id="zxModalClose" type="button" aria-label="关闭弹窗">✕</button>
+    <h3 id="zxModalTitle">提示</h3>
+    <div id="zxModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById("zxToast");
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-show"); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var menuToggle = document.getElementById("zxMenuToggle");
+  var mobileNav = document.getElementById("zxMobileNav");
+  menuToggle.addEventListener("click", function(){
+    var open = mobileNav.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    menuToggle.textContent = open ? "✕" : "☰";
+  });
+  mobileNav.addEventListener("click", function(e){
+    if(e.target.tagName === "A"){
+      mobileNav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded","false");
+      menuToggle.textContent = "☰";
+    }
+  });
+
+  /* ---------- 搜索提示 / 筛选反馈 ---------- */
+  var searchInput = document.getElementById("zxSearchInput");
+  var searchHint = document.getElementById("zxSearchHint");
+  var searchData = [
+    "年终福利攻略：12类会员权益一次看懂",
+    "积分兑换全流程：从浏览到收货的七个步骤",
+    "八款联合会员横评：价格、权益与续费坑位",
+    "周末福利路线：三条街区的门店暗号与限时券",
+    "看懂优惠券规则：七种常见限制条件拆解",
+    "300元过一周：普通人的福利生活实验",
+    "从记账笔记到十万播放：一位福利博主的三年",
+    "创作者访谈：拍福利内容要先算清账",
+    "会员权益实测：这五种兑换最值",
+    "城市福利地图：一天走完六家门店"
+  ];
+  function renderSearch(q){
+    var query = (q || "").trim();
+    searchHint.innerHTML = "";
+    if(!query){
+      searchHint.classList.remove("is-open");
+      return;
+    }
+    var hits = searchData.filter(function(item){ return item.indexOf(query) !== -1; });
+    if(hits.length === 0){
+      var empty = document.createElement("div");
+      empty.className = "zx-search__empty";
+      empty.textContent = "暂无匹配内容，试试「积分」「会员」「攻略」等关键词";
+      searchHint.appendChild(empty);
+    } else {
+      var tip = document.createElement("p");
+      tip.textContent = "找到 " + hits.length + " 条相关内容";
+      searchHint.appendChild(tip);
+      hits.slice(0,6).forEach(function(item){
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = item;
+        btn.addEventListener("click", function(){
+          searchInput.value = item;
+          searchHint.classList.remove("is-open");
+          toast("已定位到相关内容：" + item);
+          document.getElementById("zx-video").scrollIntoView({behavior:"smooth", block:"start"});
+        });
+        searchHint.appendChild(btn);
+      });
+    }
+    searchHint.classList.add("is-open");
+  }
+  searchInput.addEventListener("input", function(){ renderSearch(searchInput.value); });
+  searchInput.addEventListener("focus", function(){ if(searchInput.value.trim()) renderSearch(searchInput.value); });
+  document.addEventListener("click", function(e){
+    if(!e.target.closest(".zx-search")){ searchHint.classList.remove("is-open"); }
+  });
+  searchInput.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+      e.preventDefault();
+      var q = searchInput.value.trim();
+      if(q){ toast("正在为你筛选「" + q + "」相关内容"); }
+    }
+  });
+
+  /* ---------- 点赞 ---------- */
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-zx-like]");
+    if(!btn){ return; }
+    var item = btn.closest(".zx-video-item, .zx-focus__main");
+    var counter = item ? item.querySelector(".zx-like-count") : null;
+    var liked = btn.getAttribute("data-liked") === "1";
+    if(counter){
+      var raw = counter.textContent.replace(/,/g,"");
+      var num = parseInt(raw,10);
+      if(!isNaN(num)){
+        num = liked ? Math.max(0, num - 1) : num + 1;
+        counter.textContent = num.toLocaleString("en-US");
+      }
+    }
+    if(liked){
+      btn.setAttribute("data-liked","0");
+      btn.textContent = "👍 点赞";
+      toast("已取消点赞");
+    } else {
+      btn.setAttribute("data-liked","1");
+      btn.textContent = "✅ 已点赞";
+      toast("感谢点赞，已记录你的支持");
+    }
+  });
+
+  /* ---------- 收藏 ---------- */
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-zx-fav]");
+    if(!btn){ return; }
+    var on = btn.getAttribute("aria-pressed") === "true";
+    btn.setAttribute("aria-pressed", on ? "false" : "true");
+    btn.textContent = on ? "🤍 收藏" : "❤️ 已收藏";
+    toast(on ? "已取消收藏" : "已加入收藏夹");
+  });
+
+  /* ---------- 播放 ---------- */
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-zx-play]");
+    if(!btn){ return; }
+    toast("正在准备播放：" + btn.getAttribute("data-zx-play"));
+  });
+
+  /* ---------- 复制链接 ---------- */
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-zx-copy]");
+    if(!btn){ return; }
+    var text = btn.getAttribute("data-zx-copy") || "zxfuli福利社内容";
+    var link = "https://zxfuli.example/" + encodeURIComponent(text.slice(0,12));
+    function done(){ toast("链接已复制，可分享给朋友"); }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(link).then(done).catch(function(){ toast("复制失败，请手动选择链接"); });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = link;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try{ document.execCommand("copy"); done(); }catch(err){ toast("复制失败，请手动选择链接"); }
+      document.body.removeChild(ta);
+    }
+  });
+
+  /* ---------- 分享 ---------- */
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-zx-share]");
+    if(!btn){ return; }
+    var title = btn.getAttribute("data-zx-share") || "zxfuli福利社官方网站";
+    if(navigator.share){
+      navigator.share({title:title, text:"推荐你关注 zxfuli福利社官方网站，原创福利视频持续更新。"}).catch(function(){});
+    } else {
+      toast("分享链接：" + title + " · 可复制到微信 / 微博");
+    }
+  });
+
+  /* ---------- 弹窗系统 ---------- */
+  var mask = document.getElementById("zxModalMask");
+  var modalTitle = document.getElementById("zxModalTitle");
+  var modalBody = document.getElementById("zxModalBody");
+  var modalClose = document.getElementById("zxModalClose");
+
+  function closeModal(){
+    mask.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+  modalClose.addEventListener("click", closeModal);
+  mask.addEventListener("click", function(e){ if(e.target === mask){ closeModal(); } });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    mask.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+
+  document.addEventListener("click", function(e){
+    var trigger = e.target.closest("[data-zx-open]");
+    if(!trigger){ return; }
+    var type = trigger.getAttribute("data-zx-open");
+    if(type === "submit"){
+      openModal("投稿入口", [
+        '<p>欢迎向zxfuli福利社投稿。请填写基本信息，编辑部将在五个工作日内回复。</p>',
+        '<label for="zxF1">作品标题</label>',
+        '<input id="zxF1" type="text" placeholder="例如：一次真实的积分兑换记录">',
+        '<label for="zxF2">内容方向</label>',
+        '<select id="zxF2"><option>积分兑换攻略</option><option>会员权益测评</option><option>城市门店探索</option><option>生活方式记录</option><option>规则科普</option></select>',
+        '<label for="zxF3">联系方式</label>',
+        '<input id="zxF3" type="text" placeholder="邮箱或社区昵称">',
+        '<div class="zx-modal__actions">',
+        '<button class="zx-btn zx-btn--ghost" type="button" data-zx-close>稍后再说</button>',
+        '<button class="zx-btn zx-btn--primary" type="button" data-zx-submit>提交投稿</button>',
+        '</div>'
+      ].join(""));
+    } else if(type === "report"){
+      openModal("举报与反馈", [
+        '<p>如发现内容错误、过期规则或不当信息，请告知我们，编辑会核实并处理。</p>',
+        '<label for="zxR1">反馈类型</label>',
+        '<select id="zxR1"><option>规则已调整</option><option>数据不准确</option><option>内容涉嫌搬运</option><option>页面问题</option></select>',
+        '<label for="zxR2">具体说明</label>',
+        '<textarea id="zxR2" rows="3" placeholder="请描述问题出现的位置与情况"></textarea>',
+        '<div class="zx-modal__actions">',
+        '<button class="zx-btn zx-btn--ghost" type="button" data-zx-close>取消</button>',
+        '<button class="zx-btn zx-btn--primary" type="button" data-zx-submit>提交反馈</button>',
+        '</div>'
+      ].join(""));
+    }
+  });
+
+  document.addEventListener("click", function(e){
+    if(e.target.closest("[data-zx-close]")){ closeModal(); }
+    if(e.target.closest("[data-zx-submit]")){ closeModal(); toast("已提交，感谢你的参与"); }
+    var authorBtn = e.target.closest("[data-zx-author]");
+    if(authorBtn){
+      var parts = authorBtn.getAttribute("data-zx-author").split("|");
+      openModal(parts[0], '<p>' + (parts[1] || "") + '</p><p style="font-size:.84rem;color:var(--zx-muted);">在 zxfuli福利社 持续发布原创内容，欢迎关注并参与专题共建。</p><div class="zx-modal__actions"><button class="zx-btn zx-btn--primary" type="button" data-zx-close>知道了</button></div>');
+    }
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll("[data-zx-count]");
+  function animateCounter(el){
+    var target = parseInt(el.getAttribute("data-zx-count"),10);
+    if(isNaN(target)){ return; }
+    var suffix = el.querySelector("small") ? el.querySelector("small").outerHTML : "";
+    var start = null, dur = 1100;
+    function step(ts){
+      if(!start){ start = ts; }
+      var p = Math.min((ts - start) / dur, 1);
+      var val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+      el.innerHTML = val + suffix;
+      if(p < 1){ requestAnimationFrame(step); }
+    }
+    requestAnimationFrame(step);
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          animateCounter(entry.target);
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.5});
+    counters.forEach(function(c){ io.observe(c); });
+  } else {
+    counters.forEach(animateCounter);
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById("zxToTop");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 380){ toTop.classList.add("is-show"); }
+    else { toTop.classList.remove("is-show"); }
+  }, {passive:true});
+  toTop.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+})();
+</script>
+</body>
+  </html>
